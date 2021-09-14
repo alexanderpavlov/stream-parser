@@ -57,7 +57,7 @@ class XMLParser implements StreamParserInterface
 		}
 	}
 
-	private function extractElement(String $elementName, $couldBeAnElementsList = false, int $parentDepth, string $foundInEl = null)
+	private function extractElement(String $elementName, $couldBeAnElementsList = false, int $parentDepth = null, string $foundInEl = null)
 	{
 		$emptyElement = $this->isEmptyElement($elementName);
 		
